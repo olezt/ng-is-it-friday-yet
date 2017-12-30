@@ -1,7 +1,7 @@
-/node_modules
-/src/**.js
-/src/app/**.js
-/src/app/**.js.map
+/node_modules/
 /aot/
-package-lock.json
+/dist/
+/src/app/**.js**
+/src/**.js**
 polyfills.js
+package-lock.json

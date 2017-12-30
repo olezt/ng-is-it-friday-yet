@@ -8,7 +8,8 @@ import { FridayComponent }   from './friday.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/isitfridayyet', pathMatch: 'full' },
-  { path: 'isitfridayyet',  component: FridayComponent }
+  { path: 'isitfridayyet',  component: FridayComponent },
+  { path: '**', redirectTo: '/isitfridayyet', pathMatch: 'full' }
 ];
 
 @NgModule({

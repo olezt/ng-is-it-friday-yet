@@ -1,0 +1,47 @@
+{
+  "name": "ng-is-it-friday-yet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Isit Friday yet project",
+  "scripts": {
+    "webpack-build": "webpack --env=dev --progress --profile --colors",
+    "ngc-compile": "node_modules/.bin/ngc -p tsconfig-aot.json",
+    "ngc-webpack": "npm run ngc-compile && npm run webpack-build",
+    "server:dev": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "4.3.1",
+    "@angular/common": "4.3.1",
+    "@angular/compiler": "4.3.1",
+    "@angular/compiler-cli": "4.3.1",
+    "@angular/core": "4.3.1",
+    "@angular/forms": "4.3.1",
+    "@angular/http": "4.3.1",
+    "@angular/platform-browser": "4.3.1",
+    "@angular/platform-browser-dynamic": "4.3.1",
+    "@angular/platform-server": "4.3.1",
+    "@angular/router": "4.3.1",
+    "core-js": "2.4.1",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.4.3",
+    "webpack-dev-server": "^2.9.7",
+    "zone.js": "0.8.4"
+  },
+  "devDependencies": {
+    "concurrently": "3.5.0",
+    "typescript": "2.4.2",
+    "webpack": "3.8.1",
+    "css-loader": "0.28.7",
+    "raw-loader": "0.5.1",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.19.0",
+    "node-sass": "4.6.1",
+    "@ngtools/webpack": "1.8.0",
+    "uglifyjs-webpack-plugin": "1.0.1",
+    "lite-server": "2.2.2"
+  },
+  "repository": {}
+}

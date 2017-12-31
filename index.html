@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <base href="/">
+    <base href="/" id="baseHref">
+	<script>
+	  (function() {
+		  if(window.location.hostname!="localhost"){
+	    	document.getElementById('baseHref').href = "/ng-is-it-friday-yet/";
+		  }
+	  })();
+	</script>
     <title>Is it Friday yet?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -10,6 +17,6 @@
     <app>Loading...</app>
   </body>
   
-  <script src="/dist/polyfills.min.js"></script>
-  <script src="/dist/app.min.js"></script>
+  <script src="./dist/polyfills.min.js"></script>
+  <script src="./dist/app.min.js"></script>
 </html>

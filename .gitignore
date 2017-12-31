@@ -1,6 +1,5 @@
 /node_modules/
 /aot/
-/dist/
 /src/app/**.js**
 /src/**.js**
 polyfills.js

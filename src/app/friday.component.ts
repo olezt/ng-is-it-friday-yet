@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'friday',
+  selector: 'is-it-friday',
   templateUrl: './friday.component.html',
   styleUrls: [ './friday.component.css' ]
 })

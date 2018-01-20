@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
     
 export class FridayComponent implements OnInit {
   
+  public question = "Is it Friday yet?";
   public isItFridayYet = "Not yet";
   public backgroundImage;
     

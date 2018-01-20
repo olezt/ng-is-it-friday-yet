@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FridayComponent implements OnInit {
   
   public isItFridayYet = "Not yet";
-  public backgroundImage = "url('./src/assets/grumpy-cat.jpg')";
+  public backgroundImage;
     
   ngOnInit(): void {
       let today = new Date();
@@ -23,6 +23,8 @@ export class FridayComponent implements OnInit {
           }else if([6, 0].indexOf(today.getDay()) !== -1){
               this.isItFridayYet = "No, but it's weekend!"; 
           }
+      }else{
+      	this.backgroundImage = "url('./src/assets/grumpy-cat-"+today.getDay()+".jpg')";
       }
   }
 }
